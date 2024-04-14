@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+ 
+  <div class="conta">
+      <h2>🧾 Task Manager</h2>
+  </div>
+  <div class="container">
+    <div class="task-manager">
+
+        <form id="task-form">
+          <p id="task-name">Task Name:</p>
+          <select id="task-name-select" >
+              <option value="" selected>Select Task</option>
+              <option value="Meeting">Meeting</option>
+              <option value="Project-abc">Project-abc</option>
+              <option value="Personal break">Personal break</option>
+              <!-- Add more options as needed -->
+          </select>
+            <p id="task-description">Description:</p>
+            <textarea id="task-description-input"></textarea>
+            <p id="task-duratio">Duration (minutes):</p>
+            
+            <div><h1 id="task-duration-display">00:00:00</h1></div>
+            <button type="button"onclick="Add()">Add Task</button> <button type="button" onclick="StartStop()" id="watch">Start</button>  <button id="reset" type="button" onclick="helo()">Reset</button>
+
+        </form>
+        <div>
+          <p id="task-name">Task Name:</p>
+          <select id="cars" >
+              <option value="Filter">Filter</option>
+              <option value="Meeting">Meeting</option>
+              <option value="Project-abc">Project-abc</option>
+              <option value="Personal break">Personal break</option>
+             
+          </select>
+            <button id="filter-button" onclick="filter()">Filter</button>
+        </div>
+      <div id="cont">
+
+      </div>
+         
+      </div>
+      <img src="op.png" alt="Task Manager Image" class="task-manager-image">
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
